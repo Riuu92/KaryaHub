@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KaryaHub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>KaryaHub</h1>
+  <div class="form">
+    <input id="title" placeholder="Judul karya...">
+    <textarea id="content" placeholder="Isi karya..."></textarea>
+    <button onclick="saveWork()">Simpan</button>
+  </div>
+  <div id="list"></div>
+  <div id="reader" class="reader">
+    <button onclick="back()">← Kembali</button>
+    <h2 id="readTitle"></h2>
+    <p id="readContent"></p>
+  </div>
+
+  <button onclick="toggleDark()">🌙</button>
+
+  <input id="search"
+  placeholder="Cari karya..."
+  oninput="render()">
+</body>
+<script src="script.js"></script>
+</html>
